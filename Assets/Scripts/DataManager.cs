@@ -3,8 +3,8 @@ using UnityEngine;
 public class DataManager : MonoBehaviour
 {
 
-    public DataManager instance;
-    public string selected;
+    public static DataManager instance;
+    public string path;
 
     void Awake()
     {
