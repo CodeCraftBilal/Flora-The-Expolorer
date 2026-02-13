@@ -1,16 +1,22 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Home : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void onClickExit()
     {
-        
+        Debug.Log("Exiting");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnClickLearn()
     {
-        
+        Debug.Log("Learning");
+        SceneManager.LoadScene("LearnScene");
+    }
+
+    public void OnClickPlay()
+    {
+        Debug.Log("Playing");
+        SceneManager.LoadScene("PlayScene");
     }
 }
