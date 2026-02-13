@@ -6,17 +6,16 @@ public class Home : MonoBehaviour
     public void onClickExit()
     {
         Debug.Log("Exiting");
+        Application.Quit();
     }
 
     public void OnClickLearn()
     {
-        Debug.Log("Learning");
         SceneManager.LoadScene("LearnScene");
     }
 
     public void OnClickPlay()
     {
-        Debug.Log("Playing");
         SceneManager.LoadScene("PlayScene");
     }
 }
