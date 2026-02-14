@@ -1,0 +1,12 @@
+# ninja log v5
+50	13650	7927709361552075	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	c518c8a32eeaa899
+37	13930	7927709362359903	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	3e73bfb086bc8e25
+13	14153	7927709366688627	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	101154d86aa1317e
+25	14586	7927709370488465	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	4e6003ef21488eae
+62	15543	7927709381678875	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	dba6694a5f0ffd27
+14154	16194	7927709387219941	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	7bb2ca84d197e3d
+2	16261	7927709387868199	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	79b3e39379d4e426
+16195	17400	7927709400785345	D:/unity_projects/Flora The Explorer 3/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5b4k4858/obj/arm64-v8a/libswappywrapper.so	102abfe3c02eade5
+13931	18314	7927709410301500	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	be79734f8b0dab57
+13709	18759	7927709414783409	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	6a1cd4d3431f20c4
+18760	18917	7927709416414814	D:/unity_projects/Flora The Explorer 3/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5b4k4858/obj/arm64-v8a/libgame.so	2af762842f4f6ef8
