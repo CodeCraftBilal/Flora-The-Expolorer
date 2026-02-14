@@ -7,7 +7,7 @@ public class FruitDroperScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("dropFruits", 0.1f, 1);
+        InvokeRepeating("dropFruits", 0.1f, 1f);
     }
 
     void dropFruits()
