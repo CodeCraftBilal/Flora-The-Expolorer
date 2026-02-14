@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 0, y: -0.0025024}
+  m_SizeDelta: {x: 1158, y: 448.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &25810366
 MonoBehaviour:
@@ -517,8 +517,8 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e8c584bdcec2c1e45a6ce04b7abdabc5, type: 3}
-    m_FontSize: 77
-    m_FontStyle: 1
+    m_FontSize: 70
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 88
@@ -528,7 +528,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Select Level
+  m_Text: Level
 --- !u!222 &697450889
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -744,8 +744,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -204}
-  m_SizeDelta: {x: 648.422, y: 148.0923}
+  m_AnchoredPosition: {x: 0, y: -140}
+  m_SizeDelta: {x: 410, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1160569087
 MonoBehaviour:
@@ -865,8 +865,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 182}
-  m_SizeDelta: {x: 648.422, y: 148.0923}
+  m_AnchoredPosition: {x: 0, y: 130}
+  m_SizeDelta: {x: 410, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1330347824
 MonoBehaviour:
@@ -998,8 +998,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -11}
-  m_SizeDelta: {x: 648.422, y: 148.0923}
+  m_AnchoredPosition: {x: 0, y: 2}
+  m_SizeDelta: {x: 410, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1458021450
 MonoBehaviour:
@@ -1142,8 +1142,8 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e8c584bdcec2c1e45a6ce04b7abdabc5, type: 3}
-    m_FontSize: 77
-    m_FontStyle: 1
+    m_FontSize: 70
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 88
@@ -1223,8 +1223,8 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e8c584bdcec2c1e45a6ce04b7abdabc5, type: 3}
-    m_FontSize: 77
-    m_FontStyle: 1
+    m_FontSize: 70
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 88
