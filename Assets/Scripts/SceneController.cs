@@ -9,12 +9,13 @@ public class SceneController : MonoBehaviour
 
     void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
             sceneHistory.Push(SceneManager.GetActiveScene().name);
-        } else
+        }
+        else
         {
             Destroy(gameObject);
         }
@@ -22,7 +23,8 @@ public class SceneController : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        sceneHistory.Push(sceneName);
+        string currentScene = SceneManager.GetActiveScene().name;
+        sceneHistory.Push(currentScene);
         SceneManager.LoadScene(sceneName);
     }
 

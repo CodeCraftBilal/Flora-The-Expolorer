@@ -38,4 +38,9 @@ public class DisplayImage : MonoBehaviour
         index = (index -1 + sprite.Length) % sprite.Length;
         imageViewer.sprite = sprite[index];
     }
+
+    public void OnBack()
+    {
+        SceneController.instance.GoBack();
+    }
 }

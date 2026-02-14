@@ -12,6 +12,11 @@ public class Learn : MonoBehaviour
    public void OnFlowersClick()
     {
         DataManager.instance.path = "Learn/flowers";
-        SceneManager.LoadScene("DisplayImage");
+        SceneController.instance.LoadScene("DisplayImage");
+    }
+
+    public void onBack()
+    {
+        SceneController.instance.GoBack();
     }
 }

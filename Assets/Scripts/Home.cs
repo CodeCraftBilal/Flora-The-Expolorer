@@ -11,11 +11,11 @@ public class Home : MonoBehaviour
 
     public void OnClickLearn()
     {
-        SceneManager.LoadScene("LearnScene");
+        SceneController.instance.LoadScene("LearnScene");
     }
 
     public void OnClickPlay()
     {
-        SceneManager.LoadScene("PlayScene");
+        SceneController.instance.LoadScene("PlayScene");
     }
 }
