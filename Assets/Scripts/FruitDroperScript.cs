@@ -16,12 +16,5 @@ public class FruitDroperScript : MonoBehaviour
 
         Instantiate(fruits[randomIndex], new Vector3(UnityEngine.Random.Range(-12.5f, 12.5f),6.10f,0f), quaternion.identity);
         
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
