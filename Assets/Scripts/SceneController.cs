@@ -4,18 +4,36 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public static SceneController instance;
+    private static SceneController _instance;
+    public static SceneController instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<SceneController>();
+                if (_instance == null)
+                {
+                    GameObject go = new GameObject("SceneController");
+                    _instance = go.AddComponent<SceneController>();
+                    // DontDestroyOnLoad handles internally on Awake
+                }
+            }
+            return _instance;
+        }
+    }
+
     private Stack<string> sceneHistory = new Stack<string>();
 
     void Awake()
     {
-        if (instance == null)
+        if (_instance == null)
         {
-            instance = this;
+            _instance = this;
             DontDestroyOnLoad(gameObject);
             sceneHistory.Push(SceneManager.GetActiveScene().name);
         }
-        else
+        else if (_instance != this)
         {
             Destroy(gameObject);
         }
