@@ -5,12 +5,12 @@ public class DestroyOnClickScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("game obj: " + gameObject.name);
+        // Debug.Log("game obj: " + gameObject.name);
         if(gameObject == null) {
             Debug.Log("game object is null");
         } else
         {
-            Debug.Log("gameobject is not null");
+            // Debug.Log("gameobject is not null");
         }
     }
 
