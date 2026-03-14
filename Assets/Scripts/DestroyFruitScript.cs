@@ -2,9 +2,21 @@ using UnityEngine;
 
 public class DestroyFruitScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float fallSpeed = 2f;
+    private Rigidbody2D rb;
+
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void FixedUpdate()
+    {
+        if(rb.linearVelocity.y > fallSpeed)
+        {
+         rb.linearVelocity = new Vector2(rb.linearVelocity.x, fallSpeed);   
+        // rb.linearVelocity = Vector2.down * fallSpeed;
+        }
         
     }
 

@@ -12,9 +12,13 @@ public class FruitDroperScript : MonoBehaviour
 
     void dropFruits()
     { 
-        int randomIndex = UnityEngine.Random.Range(1, fruits.Length);
+        for(int i = 0; i<=3; i++)
+        {
+            
+        int randomIndex = UnityEngine.Random.Range(0, fruits.Length);
 
-        Instantiate(fruits[randomIndex], new Vector3(UnityEngine.Random.Range(-12.5f, 12.5f),6.10f,0f), quaternion.identity);
+        Instantiate(fruits[randomIndex], new Vector3(UnityEngine.Random.Range(-12.5f, 12.5f),UnityEngine.Random.Range(6.10f, 12f),0f), quaternion.identity);
+        }
         
     }
 }
