@@ -166,10 +166,10 @@ MonoBehaviour:
   fruits:
   - {fileID: 6828299483320564351, guid: c2a74003aa11c1343aeb5583685f3baf, type: 3}
   - {fileID: 2150244823099269870, guid: 05cc21e899224de42bf615957c091367, type: 3}
-  - {fileID: 2537779942451947455, guid: c1a40ba6fdcf9e540a407a1a6cd2d7e9, type: 3}
-  - {fileID: 6552194762356528256, guid: f05e78c4be502994387eeadefacf2d5c, type: 3}
-  - {fileID: 2617855583888368871, guid: 1d268ae3e041c124faa93b99ddf61373, type: 3}
-  - {fileID: 265579409909452515, guid: 3075d26b1c8fdf84b96333d3f0cba068, type: 3}
+  - {fileID: 2040074687693262839, guid: c1a40ba6fdcf9e540a407a1a6cd2d7e9, type: 3}
+  - {fileID: 1431592397199018724, guid: f05e78c4be502994387eeadefacf2d5c, type: 3}
+  - {fileID: 4144321282897636273, guid: 1d268ae3e041c124faa93b99ddf61373, type: 3}
+  - {fileID: 206970568927951930, guid: 3075d26b1c8fdf84b96333d3f0cba068, type: 3}
   - {fileID: 3775206545857313170, guid: 45c613ded01ef78489ae340ca14f82c8, type: 3}
 --- !u!1 &1376123060
 GameObject:
