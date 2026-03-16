@@ -42,9 +42,9 @@ public class SceneController : MonoBehaviour
     public void LoadScene(string sceneName)
     {
         string currentScene = SceneManager.GetActiveScene().name;
-        sceneHistory.Push(currentScene);
+        sceneHistory.Push(sceneName);
         SceneManager.LoadScene(sceneName);
-        Debug.Log("Scence History: "+ sceneHistory);
+        PrintSceneHistory();
     }
 
     public void GoBack()
@@ -52,13 +52,33 @@ public class SceneController : MonoBehaviour
         sceneHistory.Pop();
         string previouseScene = sceneHistory.Peek();
         SceneManager.LoadScene(previouseScene);
+        PrintSceneHistory();
     }
 
-    public void PopScene()
+    public void PopScene(int NoOfSceneToDestroy)
     {
-        if (sceneHistory.Count > 0)
+        for (int i = 0; i < NoOfSceneToDestroy; i++)
         {
-            sceneHistory.Pop();
+            if (sceneHistory.Count > 0)
+            {
+                sceneHistory.Pop();
+                PrintSceneHistory();
+            }
         }
+    }
+
+    public void PopAll()
+    {
+        Debug.Log("Popall is running. Total Scenes: " + sceneHistory.Count);
+        while (sceneHistory.Count > 0)
+        {
+            Debug.Log("Poping " + sceneHistory.Peek());
+            PopScene(1);
+        }
+    }
+
+    private void PrintSceneHistory()
+    {
+        Debug.Log("Scene History: [" + string.Join(", ", sceneHistory) + "]");
     }
 }

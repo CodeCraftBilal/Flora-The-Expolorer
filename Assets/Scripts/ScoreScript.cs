@@ -50,26 +50,24 @@ public class ScoreScript : MonoBehaviour
         targetPannel.SetActive(false);
     }
 
-    private object WaitForSeconds()
-    {
-        throw new NotImplementedException();
-    }
-
     public void SelectLevel()
     {
         Time.timeScale = 1;
+        SceneController.instance.PopScene(2);
         SceneController.instance.LoadScene("LevelScene");
     }
 
     public void Restart()
     {
         Time.timeScale = 1;
+        SceneController.instance.PopScene(1);
         SceneController.instance.LoadScene("GamePlayScene");
     }
 
     public void Home()
     {
         Time.timeScale = 1;
+        SceneController.instance.PopAll();
         SceneController.instance.LoadScene("HomeScene");
     }
 }

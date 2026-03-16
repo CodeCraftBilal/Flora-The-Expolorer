@@ -35,4 +35,9 @@ public class LevelSelectionManager : MonoBehaviour
     public void SelectLevel8()  { LoadLevel(8, "Banana", 25); }
     public void SelectLevel9()  { LoadLevel(9, "Apple", 30); }
     public void SelectLevel10() { LoadLevel(10, "Avocado", 35); }
+
+    public void GoBack()
+    {
+        SceneController.instance.GoBack();
+    }
 }

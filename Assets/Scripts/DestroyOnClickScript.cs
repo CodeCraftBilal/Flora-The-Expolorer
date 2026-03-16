@@ -8,7 +8,7 @@ public class DestroyOnClickScript : MonoBehaviour
     {
         // Debug.Log("game obj: " + gameObject.name);
         if(gameObject == null) {
-            Debug.Log("game object is null");
+            // Debug.Log("game object is null");
         } else
         {
             // Debug.Log("gameobject is not null");
@@ -17,7 +17,7 @@ public class DestroyOnClickScript : MonoBehaviour
 
     public void OnMouseDown()
     {
-        Debug.Log("Fruit Clicked: " + gameObject.name);
+        // Debug.Log("Fruit Clicked: " + gameObject.name);
 
         if (DataManager.instance != null)
         {
@@ -28,7 +28,7 @@ public class DestroyOnClickScript : MonoBehaviour
             if (!string.IsNullOrEmpty(targetFruit) && gameObject.tag.Contains(targetFruit))
             {
                 DataManager.instance.currentScore++;
-                Debug.Log("Correct fruit! Score: " + DataManager.instance.currentScore);
+                // Debug.Log("Correct fruit! Score: " + DataManager.instance.currentScore);
 
                 if (DataManager.instance.currentScore >= DataManager.instance.scoreToWin)
                 {
@@ -38,7 +38,7 @@ public class DestroyOnClickScript : MonoBehaviour
             }
             else
             {
-                Debug.Log("Wrong fruit clicked! You lose the game.");
+                // Debug.Log("Wrong fruit clicked! You lose the game.");
                 // You can call SceneController.instance.LoadScene("LoseScene"); or show a Lose Panel here
             }
         }
