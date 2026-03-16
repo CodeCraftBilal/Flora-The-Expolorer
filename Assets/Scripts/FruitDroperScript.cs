@@ -4,6 +4,10 @@ using UnityEngine;
 public class FruitDroperScript : MonoBehaviour
 {
     public GameObject[] fruits;
+    public float minX = -8f;
+    public float maxX = 8f;
+    public float minY = 6f;
+    public float maxY = -6f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +21,7 @@ public class FruitDroperScript : MonoBehaviour
             
         int randomIndex = UnityEngine.Random.Range(0, fruits.Length);
 
-        Instantiate(fruits[randomIndex], new Vector3(UnityEngine.Random.Range(-12.5f, 12.5f),UnityEngine.Random.Range(6.10f, 12f),0f), quaternion.identity);
+        Instantiate(fruits[randomIndex], new Vector3(UnityEngine.Random.Range(minX, maxX),UnityEngine.Random.Range(minY, maxY),0f), quaternion.identity);
         }
         
     }
