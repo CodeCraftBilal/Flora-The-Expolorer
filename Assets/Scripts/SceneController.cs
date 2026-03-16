@@ -44,6 +44,7 @@ public class SceneController : MonoBehaviour
         string currentScene = SceneManager.GetActiveScene().name;
         sceneHistory.Push(currentScene);
         SceneManager.LoadScene(sceneName);
+        Debug.Log("Scence History: "+ sceneHistory);
     }
 
     public void GoBack()
@@ -51,5 +52,13 @@ public class SceneController : MonoBehaviour
         sceneHistory.Pop();
         string previouseScene = sceneHistory.Peek();
         SceneManager.LoadScene(previouseScene);
+    }
+
+    public void PopScene()
+    {
+        if (sceneHistory.Count > 0)
+        {
+            sceneHistory.Pop();
+        }
     }
 }
