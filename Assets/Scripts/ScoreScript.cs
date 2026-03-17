@@ -13,6 +13,7 @@ public class ScoreScript : MonoBehaviour
     public Text TargetFruitText;
     public GameObject targetPannel;
     public float targetDisplayTime = 3f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,12 +37,21 @@ public class ScoreScript : MonoBehaviour
         inGameScoreText.text = DataManager.instance.targetFruitName + " : " + score;
         if (score == DataManager.instance.scoreToWin)
         {
-            GameOverPannel.SetActive(true);
-            afterGameScoreText.text = "You Win";
-            inGameScoreText.enabled = false;
-            DataManager.instance.currentScore = 0;
-            Time.timeScale = 0;
+            ActiveGameOverPannel("You Win");
         }
+        if (!DataManager.instance.isRightFruitClicked)
+        {
+            ActiveGameOverPannel("You Lose");
+        }
+    }
+
+    private void ActiveGameOverPannel(String textToShow)
+    {
+        GameOverPannel.SetActive(true);
+        afterGameScoreText.text = textToShow;
+        inGameScoreText.enabled = false;
+        DataManager.instance.currentScore = 0;
+        Time.timeScale = 0;
     }
 
     IEnumerator HideTargetText()
