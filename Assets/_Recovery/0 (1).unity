@@ -685,7 +685,7 @@ MonoBehaviour:
   afterGameScoreText: {fileID: 807391508}
   TargetFruitText: {fileID: 1502410116}
   targetPannel: {fileID: 1703552984}
-  targetDisplayTime: 2.03
+  targetDisplayTime: 2.02
   audioSource: {fileID: 1062063093}
 --- !u!4 &1062063092
 Transform:

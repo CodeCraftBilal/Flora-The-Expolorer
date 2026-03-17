@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class DestroyOnClickScript : MonoBehaviour
 {
-
+    public ScoreScript scoreScript;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // Debug.Log("game obj: " + gameObject.name);
+        scoreScript = FindFirstObjectByType<ScoreScript>();
         if(gameObject == null) {
             // Debug.Log("game object is null");
         } else
@@ -28,7 +28,8 @@ public class DestroyOnClickScript : MonoBehaviour
             if (!string.IsNullOrEmpty(targetFruit) && gameObject.tag.Contains(targetFruit))
             {
                 DataManager.instance.currentScore++;
-                // Debug.Log("Correct fruit! Score: " + DataManager.instance.currentScore);
+                scoreScript.PlayFruitSound(isRight: true);
+                Debug.Log("Correct fruit! Score: " + DataManager.instance.currentScore);
 
                 if (DataManager.instance.currentScore >= DataManager.instance.scoreToWin)
                 {
@@ -38,7 +39,9 @@ public class DestroyOnClickScript : MonoBehaviour
             }
             else
             {
-                // Debug.Log("Wrong fruit clicked! You lose the game.");
+                scoreScript.PlayFruitSound(isRight: false);
+                Debug.Log("Wrong fruit clicked! You lose the game.");
+                DataManager.instance.isRightFruitClicked = false;
                 // You can call SceneController.instance.LoadScene("LoseScene"); or show a Lose Panel here
             }
         }

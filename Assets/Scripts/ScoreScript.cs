@@ -13,10 +13,12 @@ public class ScoreScript : MonoBehaviour
     public Text TargetFruitText;
     public GameObject targetPannel;
     public float targetDisplayTime = 3f;
+    public AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        DataManager.instance.isRightFruitClicked = true;
         Time.timeScale = 1;
         Debug.Log("timescale: " + Time.timeScale);
         TargetTextShow();
@@ -43,6 +45,12 @@ public class ScoreScript : MonoBehaviour
         {
             ActiveGameOverPannel("You Lose");
         }
+    }
+
+    public void PlayFruitSound(bool isRight)
+    {
+        if(isRight) audioSource.Play();
+        else audioSource.Play();
     }
 
     private void ActiveGameOverPannel(String textToShow)
