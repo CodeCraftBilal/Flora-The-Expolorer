@@ -14,6 +14,8 @@ public class ScoreScript : MonoBehaviour
     public GameObject targetPannel;
     public float targetDisplayTime = 3f;
     public AudioSource audioSource;
+    public AudioSource loseAudioSource;
+    public AudioSource winAudioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -51,6 +53,12 @@ public class ScoreScript : MonoBehaviour
     {
         if(isRight) audioSource.Play();
         else audioSource.Play();
+    }
+
+    public void PlayGameOverSound(bool isWin)
+    {
+        if(isWin) winAudioSource.Play();
+        else loseAudioSource.Play();
     }
 
     private void ActiveGameOverPannel(String textToShow)
