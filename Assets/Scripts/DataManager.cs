@@ -28,6 +28,7 @@ public class DataManager : MonoBehaviour
     public string targetFruitName = "Banana"; // default for level 1
     public int scoreToWin = 3;
     public int currentScore = 0;
+    public bool isRightFruitClicked = true;
 
     void Awake()
     {
