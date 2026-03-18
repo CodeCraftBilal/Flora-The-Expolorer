@@ -55,6 +55,12 @@ public class SceneController : MonoBehaviour
         PrintSceneHistory();
     }
 
+    public void GoHome()
+    {
+        PopAll();
+        LoadScene("HomeScene");
+    }
+
     public void PopScene(int NoOfSceneToDestroy)
     {
         for (int i = 0; i < NoOfSceneToDestroy; i++)

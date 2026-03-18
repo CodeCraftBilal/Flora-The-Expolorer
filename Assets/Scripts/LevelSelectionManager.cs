@@ -45,4 +45,9 @@ public class LevelSelectionManager : MonoBehaviour
     {
         SceneController.instance.GoBack();
     }
+    
+    public void GoHome()
+    {
+        SceneController.instance.GoHome();
+    }
 }

@@ -43,4 +43,9 @@ public class DisplayImage : MonoBehaviour
     {
         SceneController.instance.GoBack();
     }
+
+    public void OnHome()
+    {
+        SceneController.instance.GoHome();
+    }
 }

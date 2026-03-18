@@ -52,4 +52,8 @@ public class PlayControllerScript : MonoBehaviour
     {
         SceneController.instance.GoBack();
     }
+    public void OnClickHome()
+    {
+        SceneController.instance.GoHome();
+    }
 }
