@@ -32,7 +32,7 @@ public class ScoreScript : MonoBehaviour
 
     private void TargetTextShow()
     {
-        TargetFruitText.text = "Eat " + DataManager.instance.scoreToWin + DataManager.instance.targetFruitName;
+        TargetFruitText.text = "Eat " + DataManager.instance.scoreToWin + " " + DataManager.instance.targetFruitName;
     }
 
     // Update is called once per frame
