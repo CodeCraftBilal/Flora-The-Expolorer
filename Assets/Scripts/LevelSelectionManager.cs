@@ -13,6 +13,11 @@ public class LevelSelectionManager : MonoBehaviour
             DataManager.instance.scoreToWin = scoreToWin;
             DataManager.instance.currentScore = 0;
 
+            PlayerPrefs.SetInt("CurrentLevel", levelNum);
+            PlayerPrefs.SetString("fruitName", fruitName);
+            PlayerPrefs.SetInt("scoreToWin", scoreToWin);
+
+
             Debug.Log($"Level {levelNum} Selected! Target: {fruitName}, Score needed: {scoreToWin}");
             
             // Assuming your game scene name is "GamePlayScene", replace if different
