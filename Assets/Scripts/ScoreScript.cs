@@ -16,6 +16,7 @@ public class ScoreScript : MonoBehaviour
     public AudioSource audioSource;
     public AudioSource loseAudioSource;
     public AudioSource winAudioSource;
+    public GameObject PausePannel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,6 +25,7 @@ public class ScoreScript : MonoBehaviour
         Time.timeScale = 1;
         Debug.Log("timescale: " + Time.timeScale);
         TargetTextShow();
+        PausePannel.SetActive(false);
         GameOverPannel.SetActive(false);
         StartCoroutine(HideTargetText());
     }
@@ -96,4 +98,23 @@ public class ScoreScript : MonoBehaviour
         SceneController.instance.PopAll();
         SceneController.instance.LoadScene("HomeScene");
     }
+
+    public void PauseGame()
+    {
+        PausePannel.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void OnPlay()
+    {
+        PausePannel.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void OnSelectLevel()
+    {
+        SceneController.instance.PopScene(1);
+        SceneController.instance.LoadScene("LevelScene");
+    }
+
 }
