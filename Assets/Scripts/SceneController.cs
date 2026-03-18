@@ -11,7 +11,7 @@ public class SceneController : MonoBehaviour
         {
             if (_instance == null)
             {
-                _instance = FindObjectOfType<SceneController>();
+                _instance = FindFirstObjectByType<SceneController>();
                 if (_instance == null)
                 {
                     GameObject go = new GameObject("SceneController");
