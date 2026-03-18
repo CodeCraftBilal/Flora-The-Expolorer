@@ -1,19 +1,27 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class DestroyOnClickScript : MonoBehaviour
+public class DestroyOnClickScript : MonoBehaviour, IPointerClickHandler
 {
     public ScoreScript scoreScript;
     void Start()
     {
         scoreScript = FindFirstObjectByType<ScoreScript>();
-        if(gameObject == null) {
-        } else
+        if (gameObject == null)
+        {
+        }
+        else
         {
             Debug.Log("gameobject is not null");
         }
     }
+    
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        HandleClick();
+    }
 
-    public void OnMouseDown()
+    public void HandleClick()
     {
         if (DataManager.instance != null)
         {
