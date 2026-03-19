@@ -2,8 +2,9 @@
 # Flora The Explorer
 
 Flora The Explorer is an interactive and engaging exploration-based game where players navigate through a vibrant environment, interact with objects, and complete challenges. The game focuses on discovery, user interaction, and dynamic gameplay elements.
-
-🎮 Features
+[Download Flora The Explorer PC ⬇️](https://github.com/CodeCraftBilal/Flora-The-Expolorer/releases/download/v1.0.0/FloraTheExplorer-v1.0.exe)
+[Download Flora The Explorer Mobile ⬇️](https://github.com/CodeCraftBilal/Flora-The-Expolorer/releases/download/v1.0.0/FloraTheExplorer-v1.0-mobile.apk)
+## 🎮 Features
 
 🌱 Interactive Gameplay
 Click-based interactions with objects (e.g., fruits, items, or targets).
@@ -37,7 +38,7 @@ Target Object
 
 Game Over Panel
 
-⚙️ How It Works
+## ⚙️ How It Works
 1. Game Start
 
 The game initializes the score and UI elements.
