@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DestroyOnClickScript : MonoBehaviour, IPointerClickHandler
+public class DestroyOnClickScript : MonoBehaviour, IPointerDownHandler
 {
     public ScoreScript scoreScript;
     void Start()
@@ -16,7 +16,7 @@ public class DestroyOnClickScript : MonoBehaviour, IPointerClickHandler
         }
     }
     
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
         HandleClick();
     }
